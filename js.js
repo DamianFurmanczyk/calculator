@@ -49,13 +49,13 @@
 
             if (outcome[outcome.length - 1]) {
                 if (arr_operators.includes(outcome[outcome.length - 1]) && arr_operators.includes(input)) {
-                    Materialize.toast('Podwojny operator! bleh', 2000);
+                    Materialize.toast('Podwojny operator nie jest dozwolony', 2000);
                     return;
                 }
             }
 
             if (this.n_unusedArrIndexes === 0) {
-                Materialize.toast('Zbyt duzo znakow!', 2000);
+                Materialize.toast('Zbyt duzo znakow', 2000);
                 return;
             } else {
                 --this.n_unusedArrIndexes;
