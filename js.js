@@ -45,7 +45,7 @@
 
         addAnOperation: function(input) {
             let outcome = this.arr_operationsDoneSoFar;
-            const arr_operators = ['-', '+', '/', ':', '.', '(', ')', '*']
+            const arr_operators = ['-', '+', '/', ':', '.', '*']
 
             if (outcome[outcome.length - 1]) {
                 if (arr_operators.includes(outcome[outcome.length - 1]) && arr_operators.includes(input)) {
